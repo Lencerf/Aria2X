@@ -225,7 +225,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd $SRCROOT/aria2\nif [[ ! -f Makefile || ! $SRCROOT/aria2bin/usr/local/include/aria2/aria2.h ]]; then\n./configure --enable-libaria2\nfi\nmake\nmake install DESTDIR=$SRCROOT/aria2bin\ninstall_name_tool -id @executable_path/../Frameworks/libaria2.0.dylib $SRCROOT/aria2bin/usr/local/lib/libaria2.0.dylib";
+			shellScript = "export PATH=\"$PATH:/usr/local/opt/gettext/bin\"\ncd $SRCROOT/aria2\nif [[ ! -f Makefile || ! $SRCROOT/aria2bin/usr/local/include/aria2/aria2.h ]]; then\nautoreconf -i\n./configure --enable-libaria2\nfi\nmake\nmake install DESTDIR=$SRCROOT/aria2bin\ninstall_name_tool -id @executable_path/../Frameworks/libaria2.0.dylib $SRCROOT/aria2bin/usr/local/lib/libaria2.0.dylib";
 		};
 /* End PBXShellScriptBuildPhase section */
 
