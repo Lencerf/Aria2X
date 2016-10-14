@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9522D00A1D1CD28A00AD141E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9522D0091D1CD28A00AD141E /* AppDelegate.swift */; };
+		9522D00C1D1CD28A00AD141E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9522D00B1D1CD28A00AD141E /* Assets.xcassets */; };
+		9522D00F1D1CD28A00AD141E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9522D00D1D1CD28A00AD141E /* MainMenu.xib */; };
+		9522D0191D1CD2CA00AD141E /* Aria2Core.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9522D0181D1CD2CA00AD141E /* Aria2Core.mm */; };
+		95679FED1D1E13710014A4A3 /* extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95679FEC1D1E13710014A4A3 /* extentions.swift */; };
+		95D2D8C91D1CE7AD003AA1C9 /* CloseIndicator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95D2D8C81D1CE7AD003AA1C9 /* CloseIndicator.xib */; };
+		95D2D8CD1D1D304E003AA1C9 /* AXTaskCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D2D8CB1D1D304E003AA1C9 /* AXTaskCellView.swift */; };
+		95D2D8CE1D1D304E003AA1C9 /* AXTaskCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95D2D8CC1D1D304E003AA1C9 /* AXTaskCellView.xib */; };
+		95D2D8D21D1D30A4003AA1C9 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D2D8D11D1D30A4003AA1C9 /* MainWindowController.swift */; };
+		95E1DCE01DB0734F00913E63 /* libaria2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E1DCDF1DB0734F00913E63 /* libaria2.0.dylib */; };
+		95E1DCE11DB0741E00913E63 /* libaria2.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 95E1DCDF1DB0734F00913E63 /* libaria2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9522D01D1D1CD41000AD141E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				95E1DCE11DB0741E00913E63 /* libaria2.0.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9522D0061D1CD28A00AD141E /* Aria2X.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aria2X.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9522D0091D1CD28A00AD141E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9522D00B1D1CD28A00AD141E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9522D00E1D1CD28A00AD141E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9522D0101D1CD28A00AD141E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9522D0161D1CD2CA00AD141E /* Aria2X-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Aria2X-Bridging-Header.h"; sourceTree = "<group>"; };
+		9522D0171D1CD2CA00AD141E /* Aria2Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aria2Core.h; sourceTree = "<group>"; };
+		9522D0181D1CD2CA00AD141E /* Aria2Core.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Aria2Core.mm; sourceTree = "<group>"; };
+		95679FEC1D1E13710014A4A3 /* extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extentions.swift; sourceTree = "<group>"; };
+		958EBCC91D1FCE0900EC5052 /* Aria2X.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Aria2X.entitlements; sourceTree = "<group>"; };
+		95D2D8C81D1CE7AD003AA1C9 /* CloseIndicator.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CloseIndicator.xib; sourceTree = "<group>"; };
+		95D2D8CB1D1D304E003AA1C9 /* AXTaskCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AXTaskCellView.swift; sourceTree = "<group>"; };
+		95D2D8CC1D1D304E003AA1C9 /* AXTaskCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AXTaskCellView.xib; sourceTree = "<group>"; };
+		95D2D8D11D1D30A4003AA1C9 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		95E1DCDF1DB0734F00913E63 /* libaria2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libaria2.0.dylib; path = aria2bin/usr/local/lib/libaria2.0.dylib; sourceTree = "<group>"; };
+		95E1DCE21DB075A900913E63 /* aria2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = aria2.h; path = aria2bin/usr/local/include/aria2/aria2.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9522D0031D1CD28A00AD141E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E1DCE01DB0734F00913E63 /* libaria2.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9522CFFD1D1CD28A00AD141E = {
+			isa = PBXGroup;
+			children = (
+				9522D0081D1CD28A00AD141E /* Aria2X */,
+				9522D0071D1CD28A00AD141E /* Products */,
+				9522D01A1D1CD40500AD141E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9522D0071D1CD28A00AD141E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9522D0061D1CD28A00AD141E /* Aria2X.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9522D0081D1CD28A00AD141E /* Aria2X */ = {
+			isa = PBXGroup;
+			children = (
+				95D2D8D11D1D30A4003AA1C9 /* MainWindowController.swift */,
+				9522D0091D1CD28A00AD141E /* AppDelegate.swift */,
+				95679FEC1D1E13710014A4A3 /* extentions.swift */,
+				95D2D8CA1D1D3016003AA1C9 /* Aria2Core */,
+				95D2D8CF1D1D3059003AA1C9 /* Views */,
+				95D2D8D01D1D3077003AA1C9 /* Supporting Files */,
+			);
+			path = Aria2X;
+			sourceTree = "<group>";
+		};
+		9522D01A1D1CD40500AD141E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95E1DCDF1DB0734F00913E63 /* libaria2.0.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95D2D8CA1D1D3016003AA1C9 /* Aria2Core */ = {
+			isa = PBXGroup;
+			children = (
+				95E1DCE21DB075A900913E63 /* aria2.h */,
+				9522D0171D1CD2CA00AD141E /* Aria2Core.h */,
+				9522D0181D1CD2CA00AD141E /* Aria2Core.mm */,
+			);
+			name = Aria2Core;
+			sourceTree = "<group>";
+		};
+		95D2D8CF1D1D3059003AA1C9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9522D00D1D1CD28A00AD141E /* MainMenu.xib */,
+				95D2D8C81D1CE7AD003AA1C9 /* CloseIndicator.xib */,
+				95D2D8CB1D1D304E003AA1C9 /* AXTaskCellView.swift */,
+				95D2D8CC1D1D304E003AA1C9 /* AXTaskCellView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		95D2D8D01D1D3077003AA1C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				958EBCC91D1FCE0900EC5052 /* Aria2X.entitlements */,
+				9522D00B1D1CD28A00AD141E /* Assets.xcassets */,
+				9522D0101D1CD28A00AD141E /* Info.plist */,
+				9522D0161D1CD2CA00AD141E /* Aria2X-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9522D0051D1CD28A00AD141E /* Aria2X */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9522D0131D1CD28A00AD141E /* Build configuration list for PBXNativeTarget "Aria2X" */;
+			buildPhases = (
+				95E1DCDE1DB0713E00913E63 /* Run Script, Compile libaria2.dylib */,
+				9522D0021D1CD28A00AD141E /* Sources */,
+				9522D0031D1CD28A00AD141E /* Frameworks */,
+				9522D0041D1CD28A00AD141E /* Resources */,
+				9522D01D1D1CD41000AD141E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aria2X;
+			productName = Aria2X;
+			productReference = 9522D0061D1CD28A00AD141E /* Aria2X.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9522CFFE1D1CD28A00AD141E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Lencerf;
+				TargetAttributes = {
+					9522D0051D1CD28A00AD141E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 68X6GG3TRY;
+						DevelopmentTeamName = "Changyuan Lyu (Personal Team)";
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 9522D0011D1CD28A00AD141E /* Build configuration list for PBXProject "Aria2X" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9522CFFD1D1CD28A00AD141E;
+			productRefGroup = 9522D0071D1CD28A00AD141E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9522D0051D1CD28A00AD141E /* Aria2X */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9522D0041D1CD28A00AD141E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95D2D8C91D1CE7AD003AA1C9 /* CloseIndicator.xib in Resources */,
+				9522D00C1D1CD28A00AD141E /* Assets.xcassets in Resources */,
+				95D2D8CE1D1D304E003AA1C9 /* AXTaskCellView.xib in Resources */,
+				9522D00F1D1CD28A00AD141E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95E1DCDE1DB0713E00913E63 /* Run Script, Compile libaria2.dylib */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script, Compile libaria2.dylib";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd $SRCROOT/aria2\nif [[ ! -f Makefile || ! $SRCROOT/aria2bin/usr/local/include/aria2/aria2.h ]]; then\n./configure --enable-libaria2\nfi\nmake\nmake install DESTDIR=$SRCROOT/aria2bin\ninstall_name_tool -id @executable_path/../Frameworks/libaria2.0.dylib $SRCROOT/aria2bin/usr/local/lib/libaria2.0.dylib";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9522D0021D1CD28A00AD141E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9522D0191D1CD2CA00AD141E /* Aria2Core.mm in Sources */,
+				95D2D8CD1D1D304E003AA1C9 /* AXTaskCellView.swift in Sources */,
+				95679FED1D1E13710014A4A3 /* extentions.swift in Sources */,
+				95D2D8D21D1D30A4003AA1C9 /* MainWindowController.swift in Sources */,
+				9522D00A1D1CD28A00AD141E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9522D00D1D1CD28A00AD141E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9522D00E1D1CD28A00AD141E /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9522D0111D1CD28A00AD141E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9522D0121D1CD28A00AD141E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		9522D0141D1CD28A00AD141E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Aria2X/Aria2X.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Aria2X/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Aria2X",
+					"$(PROJECT_DIR)/aria2bin/usr/local/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.lencerf.Aria2X;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Aria2X/Aria2X-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9522D0151D1CD28A00AD141E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Aria2X/Aria2X.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Aria2X/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Aria2X",
+					"$(PROJECT_DIR)/aria2bin/usr/local/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.lencerf.Aria2X;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Aria2X/Aria2X-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9522D0011D1CD28A00AD141E /* Build configuration list for PBXProject "Aria2X" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9522D0111D1CD28A00AD141E /* Debug */,
+				9522D0121D1CD28A00AD141E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9522D0131D1CD28A00AD141E /* Build configuration list for PBXNativeTarget "Aria2X" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9522D0141D1CD28A00AD141E /* Debug */,
+				9522D0151D1CD28A00AD141E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9522CFFE1D1CD28A00AD141E /* Project object */;
+}

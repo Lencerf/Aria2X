@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11129.15"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="AXTaskCellView" id="c22-O7-iKe" customClass="AXTaskCellView" customModule="Aria2X" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="493" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WSZ-Ub-3aU">
+                    <rect key="frame" x="2" y="42" width="479" height="18"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="TaskName" id="Upw-kA-opb">
+                        <font key="font" metaFont="system" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vEI-qS-Meb">
+                    <rect key="frame" x="3" y="28" width="477" height="13"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="TaskDetail" id="hqC-pG-kZ5">
+                        <font key="font" metaFont="system" size="10"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <progressIndicator wantsLayer="YES" canDrawConcurrently="YES" maxValue="2" doubleValue="1" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="a6v-4P-CQk">
+                    <rect key="frame" x="5" y="11" width="474" height="20"/>
+                </progressIndicator>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AJv-ib-0OE">
+                    <rect key="frame" x="3" y="2" width="57" height="13"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="TaskSpeed" id="Dqn-qV-PBf">
+                        <font key="font" metaFont="system" size="10"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="a6v-4P-CQk" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="5" id="15z-3c-lno"/>
+                <constraint firstItem="a6v-4P-CQk" firstAttribute="top" secondItem="WSZ-Ub-3aU" secondAttribute="bottom" constant="12" id="4o2-jF-cS5"/>
+                <constraint firstAttribute="trailing" secondItem="WSZ-Ub-3aU" secondAttribute="trailing" constant="14" id="Bk0-us-FOT"/>
+                <constraint firstAttribute="trailing" secondItem="a6v-4P-CQk" secondAttribute="trailing" constant="14" id="Hgt-FY-xGF"/>
+                <constraint firstItem="vEI-qS-Meb" firstAttribute="top" secondItem="WSZ-Ub-3aU" secondAttribute="bottom" constant="1" id="HpP-zB-OKl"/>
+                <constraint firstItem="WSZ-Ub-3aU" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="4" id="IqW-ot-VJn"/>
+                <constraint firstItem="AJv-ib-0OE" firstAttribute="top" secondItem="vEI-qS-Meb" secondAttribute="bottom" constant="13" id="S3K-JP-9sQ"/>
+                <constraint firstItem="WSZ-Ub-3aU" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="4" id="Xq3-LZ-77d"/>
+                <constraint firstItem="vEI-qS-Meb" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="5" id="ZCA-LG-1gD"/>
+                <constraint firstItem="AJv-ib-0OE" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="5" id="s7L-Il-EBL"/>
+                <constraint firstAttribute="trailing" secondItem="vEI-qS-Meb" secondAttribute="trailing" constant="15" id="y66-jm-o9d"/>
+            </constraints>
+            <connections>
+                <outlet property="downloadProgress" destination="a6v-4P-CQk" id="n64-oF-AHc"/>
+                <outlet property="taskDetail" destination="vEI-qS-Meb" id="cbh-E8-aTc"/>
+                <outlet property="taskName" destination="WSZ-Ub-3aU" id="yX4-fB-aNn"/>
+                <outlet property="taskSpeed" destination="AJv-ib-0OE" id="jJB-P6-RhR"/>
+            </connections>
+            <point key="canvasLocation" x="145.5" y="169"/>
+        </customView>
+    </objects>
+</document>
